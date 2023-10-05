@@ -1,5 +1,5 @@
 import http from 'http';
-
+import morgan from 'morgan';
 import app from './app';
 import { loadPlanetsData } from './models/planets.model';
 

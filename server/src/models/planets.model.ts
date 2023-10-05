@@ -24,12 +24,13 @@ export const loadPlanetsData = async () => {
       })
       .on('error', err => {})
       .on('end', () => {
-        console.log(
-          habitablePlanets.map(planet => {
-            return planet['kepler_name'];
-          })
-        );
         resolve(habitablePlanets);
       });
   });
 };
+
+function getAllPlanets() {
+  return habitablePlanets;
+}
+
+export { getAllPlanets };
