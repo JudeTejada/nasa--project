@@ -10,6 +10,9 @@ type Launch = {
 };
 
 const launches = new Map<number, Launch>();
+
+
+
 let latestFlightNumber = 100;
 launches.set(0, {
   customers: ['Zero to Mastery', 'NASA'],
